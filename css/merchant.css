@@ -1,0 +1,86 @@
+@charset "utf-8";
+/* CSS Document */
+.saa-block-btn {
+    display: block;
+    width: 100%;
+    padding:20px;
+    margin-bottom: 10px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1;
+    text-align: center;
+    color: #fff;
+    background: #28262a;
+    border: 2px solid #28262a;
+    cursor: pointer;
+    -webkit-appearance: none;
+    -webkit-transition: all .25s ease;
+    transition: all .25s ease
+}
+.saa-block-btn:hover,
+.saa-block-btn:focus,
+.saa-block-btn:active {
+    background-color: transparent;
+    border-color: #28262a;
+    color: #28262a;
+    outline: 0
+}
+
+label{
+    width: 100%!important;
+}
+
+input[type='text'], input[type='number']{
+    width: 100%!important;
+    border-radius: 0;
+    border: 0.5px solid #4c4a4e;
+    color: #4c4a4e;
+    height:44px;
+    padding: 5px;
+
+}
+
+input[type='text']:focus{
+    color: #999;
+    border: .0625rem solid #67ccf3
+}
+.saa-select
+{
+      /*display: block;*/
+    border: 1px solid #4c4a4e;
+    color: #4c4a4e;
+    background-color: #fff;
+    box-shadow: none;
+    transition: none;
+    font-size: 18px;
+    font-weight: 600;
+    height:44px!important;
+    padding: 5px;
+    -webkit-appearance: none;
+    appearance: none;
+    border: 1px solid #28262a;
+    background: #fff url('../images/select_down.svg') no-repeat right 5px top 50%;
+    background-size: 30px;
+    font-weight: 400;
+    border-color: #ef3a5c;
+    background-color: #fff;
+    -moz-appearance : none!important;
+    min-width:80px!important;
+}
+.ss-select-small
+{
+    border: 1px solid #4c4a4e;
+    color: #4c4a4e;
+    background: #fff url('../images/select_down.svg') no-repeat right 5px top 50%;
+    background-size: 10px;
+    box-shadow: none;
+    transition: none;
+    font-size: 1.5rem;
+    height:44px!important;
+    font-weight: 400;
+    -moz-appearance : none!important;
+ min-width:80px!important;
+}
+.label-wrap, .input-wrap { padding-left:0px; }
+.field-wrapper > div.form-group div { margin-top:10px; }
+.field-wrapper > div.form-group:first-child div { margin-top:0px; }

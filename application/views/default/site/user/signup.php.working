@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="ie ie6" lang="en"><![endif]-->
+<!--[if IE 7 ]><html class="ie ie7" lang="en"><![endif]-->
+<!--[if IE 8 ]><html class="ie ie8" lang="en"><![endif]-->
+<!--[if (gte IE 9)|!(IE)]><!--><html lang="en"><!--<![endif]-->
+<head>
+    <title>Shops at Avenue</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=100%; initial-scale=1; maximum-scale=1; minimum-scale=1; user-scalable=no;"/>
+
+    <!-- Styles -->
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/jasny-bootstrap.css"/>
+    <link rel="stylesheet" type="text/css" href="css/main-style.css"/>
+    <link rel="stylesheet" type="text/css" href="css/prettyPhoto.css"/>
+    <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css"/>
+    
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,600' rel='stylesheet' type='text/css'>
+	<link href='http://fonts.googleapis.com/css?family=Roboto' rel='stylesheet'>	
+
+
+<base href="<?php echo base_url(); ?>" />
+<meta name="Title" content="<?php if($meta_title=='') { echo $this->config->item('meta_title'); } else { echo $meta_title; } ?>" />
+<meta name="keywords" content="<?php if($meta_keyword=='') { echo $this->config->item('meta_keyword'); } else { echo $meta_keyword; } ?>" />
+<meta name="description" content="<?php if($meta_description==''){ echo $this->config->item('meta_description');}else{ echo $meta_description;}?>" />
+	
+<link rel="shortcut icon" type="image/x-icon" href="<?php echo base_url().'images/logo/'.$this->config->item('fevicon_image'); ?>">
+
+<?php //if($this->config->item('google_verification_code')){ echo stripslashes($this->config->item('google_verification_code'));} ?>
+	<script src="js/modernizr.js"></script> <!-- Modernizr -->
+
+<script src="js/front/jquery-1.11.1.min.js"></script>
+<script src="js/front/bootstrap.min-v3.3.4.js"></script>
+</head>
+
+<?php 
+
+//if (is_file('google-login-mats/index.php')) {
+//	require_once 'google-login-mats/index.php';
+//}
+
+if($this->session->userdata('rUrl') != '')
+{
+	$reUrl = $this->session->userdata('rUrl');
+	$this->session->unset_userdata('rUrl');
+	redirect ($reUrl);
+}
+?>
+<body>
+
+<div id="header">
+    <div class="container">
+        <div class="row-fluid">
+            <div class="span12 logo" style="text-align:center !important;">
+                  <a href="<?php echo base_url(); ?>"><img src="images/logo/<?php echo $this->config->item('logo_image'); ?>" alt="" style="margin-top:7px; text-align:center;"/></a>
+            </div>
+
+<!-- start: Container -->
+
+<div id="sequence"></div>
+               
+               
+<div id="container">
+    <div class="container">
+		 <div class="row-fluid">
+			<section class="span12 page-sidebar">
+			<div class="span4 hidden-phone" ></div>
+       		<div class="span4" style="background-color:#eaeaea; padding:30px 30px 50px 30px;">
+			
+                	<h2 style="text-align:center;">Sign In</h2>
+                    <img src="images/facebook.jpg">
+                    <h4 style="margin-top:20px; text-align:center;">Or</h4>
+
+			<form id="login-form" class="auth-form auth-form-login osky-form" action="site/user/login_user" method="post" novalidate="" data-abide="ltu4le-abide">
+                <input type='hidden' value="<?php echo $this->input->get('action');  ?>" name="next_url"/>
+                
+                <div class="input-prepend" style="height:45px !important;">
+  				<span class="add-on"><i class="icon-envelope"></i></span>
+                <input id="email" class="input-xlarge" name="emailAddr" placeholder="Email Address" autocapitalize="off" autocomplete="off" required="required" autofocus="" type="email" >
+                
+				</div>
+                
+                 <div class="input-prepend" style="height:45px !important;">
+  				<span class="add-on"><i class="icon-key"></i></span>
+                <input id="password" class="input-xlarge" name="password" placeholder="Password" autocapitalize="off" value="" required="required" type="password"  >
+                
+				</div>
+                
+                <p>
+                	<div id="signinbt">
+                	<button class="btn btn-large btn-block btn-primary" type="submit">Sign In</button>
+                    </div>
+                </p>
+                
+                <p style="clear:both; font-size:12px; "><a href="#">Forgot Password?</a></p>
+                <p>
+					<?php
+                            if($this->session->flashdata('sErrMSG') != '') { ?>
+                            <div class="errorContainer" id="<?php echo $this->session->flashdata('sErrMSGType'); ?>">
+                              <script>setTimeout("hideErrDiv('<?php echo $this->session->flashdata('sErrMSGType'); ?>')", 5000);</script>
+                              <p><span style="color:red;"> <?php echo $this->session->flashdata('sErrMSG');  ?> </span></p>
+                            </div>
+                     <?php } ?>
+                </p>
+               <h5>New to shopsatavenue.com?</h5>
+                
+                 <div id="signinbt" style="margin-top:20px; margin-bottom:10px;">
+                 <a href="register"><button class="btn btn-large btn-block btn-warning" type="button">Create an Account</button></a>
+                 </div>
+		
+
+               <div class="span4"></div>
+              
+               
+                 <p style="text-align:center; clear:both; line-height:19px; font-size:11px;">By clicking the above you agree to <a href="#">shopsatavenue.com</a><br>
+terms and privacy policy.</p>
+             
+                
+   
+    </form>
+           
+		</section>
+       	</div>
+	</div>
+   
+</div>
+<!-- end: Container -->
+
+</div>
+
+<!-- start: Footer menu -->
+<section id="footer-menu">
+    <div class="container">
+        <div class="row-fluid">
+                <p class="copyright text-center">Copyrights © 2017 Shopsatavenue.com</p>
+        </div>
+    </div>
+</section>
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+
+</body>
+</html>
+
+
+
+ 

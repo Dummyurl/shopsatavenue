@@ -1,0 +1,616 @@
+ - Order total is invalid.8 - OrderTotal (Amt) : Required parameter missing9 - Order total is invalid.11 - Order total is invalid.
+12 - Order total is invalid.
+13 - 16.4750
+13 - METHOD=DoDirectPayment&VERSION=78&USER=sandbox_api1.shopsatavenue.net&PWD=KUXQMAYT6J6C5LEP&SIGNATURE=AFcWxV21C7fd0v3bYYYRCpSSRl31ATRGjhQHUjjomxSzOTtN-dHoguTH&CUSTREF=13&PAYMENTACTION=Sale&AMT=16.4750&ACCT=4032031007072860&EXPDATE=042021&CVV2=365&FIRSTNAME=Venkat+Guru&EMAIL=gvkv2010%40gmail.com&PHONENUM=658974895&IPADDRESS=127.0.0.1&STREET=123+test+st&CITY=dallas&STATE=TX&ZIP=TX&COUNTRYCODE=US&CURRENCYCODE=USD
+13 - Order total is invalid.
+14 - 16.4750
+14 - METHOD=DoDirectPayment&VERSION=78&USER=sandbox_api1.shopsatavenue.net&PWD=KUXQMAYT6J6C5LEP&SIGNATURE=AFcWxV21C7fd0v3bYYYRCpSSRl31ATRGjhQHUjjomxSzOTtN-dHoguTH&CUSTREF=14.00&PAYMENTACTION=Sale&AMT=16.4750&ACCT=4032031007072860&EXPDATE=082021&CVV2=234&FIRSTNAME=Venkat+Guru&EMAIL=gvkv2010%40gmail.com&PHONENUM=658974895&IPADDRESS=127.0.0.1&STREET=123+test+st&CITY=dallas&STATE=TX&ZIP=TX&COUNTRYCODE=US&CURRENCYCODE=USD
+14 - Order total is invalid.
+15 - 16.4750
+15 - METHOD=DoDirectPayment&VERSION=78&USER=sandbox_api1.shopsatavenue.net&PWD=KUXQMAYT6J6C5LEP&SIGNATURE=AFcWxV21C7fd0v3bYYYRCpSSRl31ATRGjhQHUjjomxSzOTtN-dHoguTH&CUSTREF=15&PAYMENTACTION=Sale&AMT=16.48&ACCT=4032031007072860&EXPDATE=082021&CVV2=345&FIRSTNAME=Venkat+Guru&EMAIL=gvkv2010%40gmail.com&PHONENUM=658974895&IPADDRESS=127.0.0.1&STREET=123+test+st&CITY=dallas&STATE=TX&ZIP=TX&COUNTRYCODE=US&CURRENCYCODE=USD
+15 - AVSCODE: X
+CVV2MATCH: M
+TRANSACTIONID: 04N37125L5807490M
+
+16 - AVSCODE: X
+CVV2MATCH: M
+TRANSACTIONID: 7N260568KB9392500
+
+16 - Array
+(
+    [TIMESTAMP] => 2016-07-25T08:44:17Z
+    [CORRELATIONID] => d0a5f40d97a12
+    [ACK] => Success
+    [VERSION] => 78
+    [BUILD] => 22386173
+    [AMT] => 16.48
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 7N260568KB9392500
+)
+
+17 - AVSCODE: X
+CVV2MATCH: M
+TRANSACTIONID: 2HT421715V094862A
+
+17 - Array
+(
+    [TIMESTAMP] => 2016-07-25T08:57:35Z
+    [CORRELATIONID] => 9bbb06c4b4b53
+    [ACK] => Success
+    [VERSION] => 78
+    [BUILD] => 22386173
+    [AMT] => 190.00
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 2HT421715V094862A
+)
+
+5 - AVSCODE: X
+CVV2MATCH: M
+TRANSACTIONID: 97P3931471046810F
+
+5 - Array
+(
+    [TIMESTAMP] => 2016-07-26T07:08:38Z
+    [CORRELATIONID] => c6eb635be139b
+    [ACK] => Success
+    [VERSION] => 78
+    [BUILD] => 22386173
+    [AMT] => 49.43
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 97P3931471046810F
+)
+
+8 - AVSCODE: X
+CVV2MATCH: M
+TRANSACTIONID: 8BK77274E2877634S
+
+8 - Array
+(
+    [TIMESTAMP] => 2016-07-26T12:47:59Z
+    [CORRELATIONID] => 148954004fe5
+    [ACK] => Success
+    [VERSION] => 78
+    [BUILD] => 22386173
+    [AMT] => 16.48
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 8BK77274E2877634S
+)
+
+9 - The transaction could not be loaded
+1 - This transaction cannot be processed at this time. Please try again later.
+2 - AVSCODE: X
+CVV2MATCH: M
+TRANSACTIONID: 1U735373S5644153Y
+
+2 - Array
+(
+    [TIMESTAMP] => 2016-07-28T06:05:22Z
+    [CORRELATIONID] => 76050890c407e
+    [ACK] => Success
+    [VERSION] => 78
+    [BUILD] => 22386173
+    [AMT] => 10.40
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 1U735373S5644153Y
+)
+
+3 - AVSCODE: X
+CVV2MATCH: M
+TRANSACTIONID: 64G20048PD319024D
+
+3 - Array
+(
+    [TIMESTAMP] => 2016-08-26T04:35:28Z
+    [CORRELATIONID] => 26186e6fd4fcd
+    [ACK] => Success
+    [VERSION] => 78
+    [BUILD] => 000000
+    [AMT] => 20.04
+    [CURRENCYCODE] => USD
+    [AVSCODE] => X
+    [CVV2MATCH] => M
+    [TRANSACTIONID] => 64G20048PD319024D
+)
+
+Invalid integer: 107.1000
+Invalid integer: 107.1000
+Invalid integer: 107.1000
+Invalid integer: 107.1000
+Invalid integer: 107.1000
+11 - Stripe_Charge Object
+(
+    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+    [_values:protected] => Array
+        (
+            [id] => ch_1ANZb0KFlwIolLsKLZmYm5JI
+            [object] => charge
+            [amount] => 10710
+            [amount_refunded] => 0
+            [application] => 
+            [application_fee] => 
+            [balance_transaction] => txn_1ANZb0KFlwIolLsKCW1oRt8c
+            [captured] => 1
+            [created] => 1495771118
+            [currency] => usd
+            [customer] => 
+            [description] => 11
+            [destination] => 
+            [dispute] => 
+            [failure_code] => 
+            [failure_message] => 
+            [fraud_details] => Array
+                (
+                )
+
+            [invoice] => 
+            [livemode] => 
+            [metadata] => Stripe_AttachedObject Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [on_behalf_of] => 
+            [order] => 
+            [outcome] => Stripe_Object Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                            [network_status] => approved_by_network
+                            [reason] => 
+                            [risk_level] => normal
+                            [seller_message] => Payment complete.
+                            [type] => authorized
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [paid] => 1
+            [receipt_email] => 
+            [receipt_number] => 
+            [refunded] => 
+            [refunds] => Stripe_List Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                )
+
+                            [has_more] => 
+                            [total_count] => 0
+                            [url] => /v1/charges/ch_1ANZb0KFlwIolLsKLZmYm5JI/refunds
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [review] => 
+            [shipping] => 
+            [source] => Stripe_Card Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                            [id] => card_1ANZawKFlwIolLsKk0kryumr
+                            [object] => card
+                            [address_city] => 
+                            [address_country] => 
+                            [address_line1] => 
+                            [address_line1_check] => 
+                            [address_line2] => 
+                            [address_state] => 
+                            [address_zip] => 
+                            [address_zip_check] => 
+                            [brand] => Visa
+                            [country] => US
+                            [customer] => 
+                            [cvc_check] => pass
+                            [dynamic_last4] => 
+                            [exp_month] => 1
+                            [exp_year] => 2024
+                            [fingerprint] => 8fwqU2nikNrgbVIl
+                            [funding] => credit
+                            [last4] => 4242
+                            [metadata] => Stripe_AttachedObject Object
+                                (
+                                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                                    [_values:protected] => Array
+                                        (
+                                        )
+
+                                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                                        (
+                                            [_elts:Stripe_Util_Set:private] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [_transientValues:protected] => Stripe_Util_Set Object
+                                        (
+                                            [_elts:Stripe_Util_Set:private] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [_retrieveOptions:protected] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [name] => 
+                            [tokenization_method] => 
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [source_transfer] => 
+            [statement_descriptor] => 
+            [status] => succeeded
+            [transfer_group] => 
+        )
+
+    [_unsavedValues:protected] => Stripe_Util_Set Object
+        (
+            [_elts:Stripe_Util_Set:private] => Array
+                (
+                )
+
+        )
+
+    [_transientValues:protected] => Stripe_Util_Set Object
+        (
+            [_elts:Stripe_Util_Set:private] => Array
+                (
+                )
+
+        )
+
+    [_retrieveOptions:protected] => Array
+        (
+        )
+
+)
+
+12 - Stripe_Charge Object
+(
+    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+    [_values:protected] => Array
+        (
+            [id] => ch_1ARyl7KFlwIolLsKctF2ICeo
+            [object] => charge
+            [amount] => 4745
+            [amount_refunded] => 0
+            [application] => 
+            [application_fee] => 
+            [balance_transaction] => txn_1ARyl7KFlwIolLsKk0L7a2DG
+            [captured] => 1
+            [created] => 1496821157
+            [currency] => usd
+            [customer] => 
+            [description] => 12
+            [destination] => 
+            [dispute] => 
+            [failure_code] => 
+            [failure_message] => 
+            [fraud_details] => Array
+                (
+                )
+
+            [invoice] => 
+            [livemode] => 
+            [metadata] => Stripe_AttachedObject Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [on_behalf_of] => 
+            [order] => 
+            [outcome] => Stripe_Object Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                            [network_status] => approved_by_network
+                            [reason] => 
+                            [risk_level] => normal
+                            [seller_message] => Payment complete.
+                            [type] => authorized
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [paid] => 1
+            [receipt_email] => 
+            [receipt_number] => 
+            [refunded] => 
+            [refunds] => Stripe_List Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                            [object] => list
+                            [data] => Array
+                                (
+                                )
+
+                            [has_more] => 
+                            [total_count] => 0
+                            [url] => /v1/charges/ch_1ARyl7KFlwIolLsKctF2ICeo/refunds
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [review] => 
+            [shipping] => 
+            [source] => Stripe_Card Object
+                (
+                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                    [_values:protected] => Array
+                        (
+                            [id] => card_1ARyl3KFlwIolLsKSqbezopJ
+                            [object] => card
+                            [address_city] => 
+                            [address_country] => 
+                            [address_line1] => 
+                            [address_line1_check] => 
+                            [address_line2] => 
+                            [address_state] => 
+                            [address_zip] => 
+                            [address_zip_check] => 
+                            [brand] => Visa
+                            [country] => US
+                            [customer] => 
+                            [cvc_check] => pass
+                            [dynamic_last4] => 
+                            [exp_month] => 1
+                            [exp_year] => 2019
+                            [fingerprint] => 8fwqU2nikNrgbVIl
+                            [funding] => credit
+                            [last4] => 4242
+                            [metadata] => Stripe_AttachedObject Object
+                                (
+                                    [_apiKey:protected] => sk_test_fQbU9NKh8YJAGNgp5WFGZy3i
+                                    [_values:protected] => Array
+                                        (
+                                        )
+
+                                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                                        (
+                                            [_elts:Stripe_Util_Set:private] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [_transientValues:protected] => Stripe_Util_Set Object
+                                        (
+                                            [_elts:Stripe_Util_Set:private] => Array
+                                                (
+                                                )
+
+                                        )
+
+                                    [_retrieveOptions:protected] => Array
+                                        (
+                                        )
+
+                                )
+
+                            [name] => 
+                            [tokenization_method] => 
+                        )
+
+                    [_unsavedValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_transientValues:protected] => Stripe_Util_Set Object
+                        (
+                            [_elts:Stripe_Util_Set:private] => Array
+                                (
+                                )
+
+                        )
+
+                    [_retrieveOptions:protected] => Array
+                        (
+                        )
+
+                )
+
+            [source_transfer] => 
+            [statement_descriptor] => 
+            [status] => succeeded
+            [transfer_group] => 
+        )
+
+    [_unsavedValues:protected] => Stripe_Util_Set Object
+        (
+            [_elts:Stripe_Util_Set:private] => Array
+                (
+                )
+
+        )
+
+    [_transientValues:protected] => Stripe_Util_Set Object
+        (
+            [_elts:Stripe_Util_Set:private] => Array
+                (
+                )
+
+        )
+
+    [_retrieveOptions:protected] => Array
+        (
+        )
+
+)
+
+No such token: false

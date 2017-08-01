@@ -1,0 +1,33 @@
+DELIMITER $$
+DROP FUNCTION IF EXISTS `GetCategoryTree` $$
+
+CREATE FUNCTION `GetCategoryTree` (GivenID INT) RETURNS VARCHAR(1024)
+DETERMINISTIC
+BEGIN
+    DECLARE rv VARCHAR(1024);
+    DECLARE cm CHAR(1);
+    DECLARE ch INT;
+    DECLARE cat_id INT;
+	DECLARE cn CHAR(255);
+	DECLARE cats text;
+	DECLARE cats_sep CHAR(1);
+
+    SET rv = ''; /* return value */
+    SET cm = ''; /* comma */
+    SET cat_id = GivenID;
+    SET ch = GivenID;
+    SET cn = '';
+	SET cats= '';
+	SET cats_sep = '';
+    WHILE Not ch = 0 DO
+        SELECT IFNULL(`rootID`,0), cat_name INTO ch, cn FROM shopsy_category WHERE id = cat_id;
+            SET rv = CONCAT(rv,cm,cat_id);
+            SET cats = CONCAT(cats,cats_sep,cn);
+            SET cm = ',';
+            SET cats_sep = ':';
+        SET cat_id = ch;
+    END WHILE;
+    SET rv = CONCAT( rv, '^', cats );
+    RETURN rv;
+
+END $$

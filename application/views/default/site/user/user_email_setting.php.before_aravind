@@ -1,0 +1,95 @@
+<?php $this->load->view('site/templates/header'); ?>
+<style>
+#main-content h2{
+ margin-bottom:20px;
+}
+#main-content h3{
+ margin-bottom:10px;
+ font-size:18px;
+}
+#main-content #signinbt{
+ width:400px;
+ margin-bottom:40px;
+}
+#main-content p{
+ margin-bottom:20px;
+}
+
+.checkbox p{
+ margin-left:20px;
+}
+.col-centered{
+    float: none;
+    margin: 0 auto;
+}
+</style>
+
+<?php $this->load->view('site/templates/user_menu'); ?>
+
+<section id="">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-8 col-centered">
+					<div id="main-content">
+<h2>Email Settings</h2>
+<p>We love communicating with you, but we want to fit your schedle!</p>
+
+<p>Your email subscription for info@swiftglobal.net can be managed with the options below. To control how often you hear from us, please check the
+appropriate boxes and click "Save" to update your preferences.</p>
+
+<div class="row">
+                        <div class="col-xs-8">
+                          <div class="checkbox icheck">
+                            <label>
+                              <input type="checkbox"> New Sale & Discount Alerts
+                            </label>
+                            <p>I would like to receive notifications about new sales and discounts on products i love</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+<div class="row">
+                        <div class="col-xs-8">
+                          <div class="checkbox icheck">
+                            <label>
+                              <input type="checkbox"> Promotional Emails
+                            </label>
+                            <p>I would like to receive updates on exclusive sales, new arrivals, trending products and more.</p>
+                          </div>
+                        </div>
+                      </div>
+                      
+                       <p>
+                            <div id="signinbt">
+                            <button class="btn btn-large btn-block btn-primary" type="submit">Save My Preferences</button>
+                            </div>
+                        </p>
+                        
+                        <h3>Email Me Less Frequently</h3>
+                        <p>If you'd prefer for us to email you only once a week so you can still keep in touch from time to time, please click the button below.</p>
+                        
+                       <p>
+                            <div id="signinbt">
+                            <button class="btn btn-large btn-block btn-primary" type="submit">One Email per Week, Thanks!</button>
+                            </div></p>
+                            
+                                <h3>Unsubscribe All (Have a store? Update your email settings above.)</h3>
+                        <p>If you wish to unsubscribe from all emails from click the button below.</p>
+                        
+                       <p>
+                            <div id="signinbt">
+                            <button class="btn btn-large btn-block btn-primary" type="submit">Unsubscribe All</button>
+                            </div></p>
+                            
+                            
+                                <h3>Keep Them Coming</h3>
+                        <p>On second thought, I'd like to continue receiving communications from </p>
+                        
+                       <p>
+                            <div id="signinbt">
+                            <button class="btn btn-large btn-block btn-primary" type="submit">Keep 'em Coming!</button>
+                            </div>
+                            </p>
+</div>
+</div></div></div></div>
+<?php $this->load->view('site/templates/footer'); ?>

@@ -1,0 +1,224 @@
+<footer>
+		<div class="footer-top">
+				<div class="container">
+					<div class="row">
+						<div class="footer-widget-wrapper">
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-widget">
+									<h2 class="footer-widget-title">Turn Your Passion Into Biz.</h2>
+									 <ul class="unstyled">
+                        				<li><a href="site/shop/plans">Open a Shop</a></li>
+                        			 </ul>
+								 </div><!-- footer-widget -->
+							</div>
+							<div class="col-md-3 col-sm-6">
+								<div class="footer-widget">
+									<h2 class="footer-widget-title">Get to Know Us</h2>
+									<ul class="unstyled">
+                        				 <li><a href="pages/about-us">About Us</a></li>
+                       					 <li><a href="pages/contact-us">Contact</a></li>
+                       					 <li><a href="#">Press</a></li>
+                       				</ul>
+								</div><!-- footer-widget -->
+							</div>
+							<div class="col-md-2 col-sm-6">
+								<div class="footer-widget">
+									<h2 class="footer-widget-title">Policy</h2>
+                                     <ul class="unstyled">
+                        				<li><a href="pages/privacy-policy">Privacy Policy</a></li>
+                        				<li><a href="pages/shipping-policy">Shipping Policy</a></li>
+                        				<li><a href="pages/return-policy">Return Policy</a></li>
+                        				<li><a href="#">Terms of Use</a></li>
+                    				 </ul>
+								</div><!-- footer-widget -->
+							</div>
+							<div class="col-md-2 col-sm-6">
+								<div class="footer-widget">
+									<h2 class="footer-widget-title">Account</h2>
+									<ul class="unstyled">
+                     					<li><a href="signup">SIGN UP</a></li>
+                     					<li><a href="#">Account Overview</a></li>
+                        				<li><a href="#">My Orders</a></li>
+                        				<li><a href="#">My Favorites</a></li>
+                        				<li><a href="#">Shipping & Billing</a></li>
+                    				</ul>
+								</div><!-- footer-widget -->
+							</div>
+                            
+                            <div class="col-md-2 col-sm-6">
+								<div class="footer-widget">
+									<h2 class="footer-widget-title">Follow Us</h2>
+									<div class="social-profiles">
+                                        <ul>
+                                            <li><a href="#"><i class="fa fa-facebook"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-google-plus"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-rss"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-twitter"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-dribbble"></i></a></li>
+                                            <li><a href="#"><i class="fa fa-vimeo-square"></i></a></li>
+                                        </ul>
+									</div>
+                                    <div><a href="#">BLOG</a></div>
+								</div><!-- footer-widget -->
+							</div>
+						</div><!-- footer-widget-wrapper -->
+					</div>
+				</div><!-- container -->
+		</div><!-- footer-top -->
+		<!--Scroll top-->
+		<div class="scroll-top">
+			<i class="fa fa-angle-up"></i>
+		</div>
+		<div class="footer-bottom">
+        	<div class="container">
+			<div class="row">
+			<p style="text-align:center;">Copyright © 2017 Shopsatavenue.com</p>
+            </div>
+            </div>
+		</div><!-- footer-bottom -->
+</footer><!-- Footer End-->
+
+	<script src="<?php echo base_url();?>bootstrap/js/bootstrap.min.js"></script>
+	<script type="text/javascript" src="<?php echo base_url();?>js/jquery-2.1.3.min.js"></script>
+	<!-- <script type="text/javascript" src="<?php echo base_url();?>js/jquery/jquery.etalage.min.js"></script>
+	<script type="text/javascript" >
+
+  $(document).ready(function(){
+
+    $('#etalage').etalage({
+      thumb_image_width: 488,
+      thumb_image_height: 488,
+      source_image_width: 800,
+      source_image_height: 800,
+      show_hint: true,
+      click_callback: function(image_anchor, instance_id){
+        //alert('Callback example:\nYou clicked on an image with the anchor: "'+image_anchor+'"\n(in Etalage instance: "'+instance_id+'")');
+      }
+    });
+
+  });
+
+	</script> -->
+
+
+	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
+<script type="text/javascript" src="js/zoom/jquery.imagezoom.min.js"></script>
+<script type="text/javascript" src="js/zoom/modernizr.custom.17475.js"></script>
+<script type="text/javascript" src="js/zoom/jquery.elastislide.js"></script>
+
+
+<script type="text/javascript">
+$(function() {
+    $('#demo1').ImageZoom();
+    var a = $('#demo2carousel').elastislide({
+        start: 0,
+        minItems: 3,
+        onClick: function(c, d, e) {
+
+            c.siblings().removeClass("active");
+            c.addClass("active");
+           
+            var f = $('#demo2').data('imagezoom');
+            f.changeImage(c.find('img').attr('src'), c.find('img').data('largeimg'));
+             e.preventDefault();
+
+             return false; 
+
+        },
+        onReady: function() {
+            $('#demo2').ImageZoom({
+
+                bigImageSrc: 'demo_assets/large/3.jpg'
+            });
+            $('#demo2carousel li:eq(0)').click();
+            $('#demo2carousel li:eq(0)').addClass('active')
+        }
+    });
+    $('#demo3').ImageZoom({
+        type: 'standard',
+        zoomSize: [480, 300],
+        bigImageSrc: 'demo_assets/large/6.jpg',
+        offset: [10, -4],
+        zoomViewerClass: 'standardViewer'
+    });
+    var b = $('#demo3').data('imagezoom');
+    $(window).resize(function() {
+        winWidth = $(window).width();
+        if (winWidth > 900) {
+            b.changeZoomSize(480, 300)
+        } else {
+            b.changeZoomSize(winWidth * 0.4, winWidth * 0.4 * 0.625)
+        }
+    });
+    var a = $('#demo4carousel').elastislide({
+        start: 1,
+        minItems: 4,
+        onClick: function(c, d, e) {
+            c.siblings().removeClass("active");
+            c.addClass("active");
+            a.setCurrent(d);
+            e.preventDefault();
+            var f = $('#demo4').data('imagezoom');
+            f.changeImage(c.find('img').attr('src'), c.find('img').data('largeimg'))
+        },
+        onReady: function() {
+            $('#demo4').ImageZoom({
+                type: 'standard',
+                zoomSize: [480, 300],
+                bigImageSrc: 'demo_assets/large/2.jpg',
+                offset: [10, -4],
+                zoomViewerClass: 'standardViewer',
+                onShow: function(c) {
+                    c.$viewer.hide().fadeIn(500)
+                },
+                onHide: function(c) {
+                    c.$viewer.show().fadeOut(500)
+                }
+            });
+            $('#demo4carousel li:eq(1)').addClass('active');
+            $(window).resize(function() {
+                var c = $('#demo4').data('imagezoom');
+                winWidth = $(window).width();
+                if (winWidth > 900) {
+                    c.changeZoomSize(480, 300)
+                } else {
+                    c.changeZoomSize(winWidth * 0.4, winWidth * 0.4 * 0.625)
+                }
+            })
+        }
+    });
+    $('#demo5').ImageZoom({
+        type: 'follow',
+        zoomViewerClass: 'followViewer'
+    });
+    var a = $('#demo6carousel').elastislide({
+        start: 0,
+        minItems: 4,
+        onClick: function(c, d, e) {
+            c.siblings().removeClass("active");
+            c.addClass("active");
+            a.setCurrent(d);
+            e.preventDefault();
+            var f = $('#demo6').data('imagezoom');
+            f.changeImage(c.find('img').attr('src'), c.find('img').data('largeimg'))
+        },
+        onReady: function() {
+            $('#demo6').ImageZoom({
+                type: 'follow',
+                bigImageSrc: 'demo_assets/large/5.jpg',
+                zoomViewerClass: 'followViewer'
+            });
+            $('#demo6carousel li:eq(0)').addClass('active')
+        }
+    })
+});
+</script>
+
+	
+	<!--<script src="<?php //echo base_url();?>js/swiper.js"></script>-->
+	<!--<script src="<?php //echo base_url();?>js/isotope.js"></script>
+	<script src="<?php //echo base_url();?>js/plugins.js"></script>-->
+	<!--<script src="<?php //echo base_url();?>js/functions.js"></script>-->
+
+</body>
+</html>

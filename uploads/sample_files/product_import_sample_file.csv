@@ -1,0 +1,8 @@
+ItemID,GroupItemID,Title,Description,Quantity,Category,Price,MSRP,MaxProductDiscount,MaxDiscountPercentageLocked,Color,Size,Variation1,Variation2,Variation3,ShippingCost,ShippingCostAdditionalItem,AlaskaHawaiiShippingCost,AlaskaHawaiiShippingCostAdditionalItem,PuertoRicoShippingCost,PuertoRicoShippingCostAdditionalItem,EstimatedShippingDays,ShopsAtAvenueExclusive,MadeToOrder,UPC,MPN,ShopifyProductUrl,Brand,Image1,Image2,Image3,Image4,Image5,ProductVideo,Weight,Length,Width,Height,PublishStatus
+SHIRT-123,,My Shirt,An awesome shirt,,apparel/womens-apparel/womens-tops/womens-shirts-blouses,,,25,Yes,Yes,Yes,,,,1,2,3,4,5,6,5,yes,yes,1234567890,123456,http://mystore.shopify.com/productname,MyBrand,http://domain.com/shirt.jpg,,,,,http://youtube.com/videolink,5,10,1,1,PUBLISHED
+SHIRT-123-R,SHIRT-123,,,1,,10,35,,,Red,Small,,,,,,,,,,,,,,,,,http://domain.com/shirt_red.jpg,,,,,,,,,,
+SHIRT-123-G,SHIRT-123,,,2,,10,35,,,Green,Small,,,,,,,,,,,,,,,,,http://domain.com/shirt_green.jpg,,,,,,,,,,
+HAT-456,,My Hat,A cool hat,10,accessories/womens-accessories/womens-hats-beanies,25,45,,,,,,,,1,1,1,1,1,1,3,no,no,9988776655,987654321,,MyBrand,http://domain.com/hat.jpg,http://domain.com/image1.jpg,,,,,4,4,2,1,DRAFT
+RING-678,,My Ring,An elegant ring,,jewelry/fine-jewelry/fine-rings/rings-cocktails-statements,,,,,,,Stone,,,5,,,,,,2,yes,no,7555577777,6767676,,MyBrand,http://domain.com/ring.jpg,,,,,,1,1,1,1,PUBLISHED
+RING-678-E,RING-678,,,4,,750,900,,,,,emerald,,,,,,,,,,,,,,,,http://domain.com/ring_emerald.jpg,,,,,,,,,,
+RING-678-D,RING-678,,,5,,950,1000,,,,,diamond,,,,,,,,,,,,,,,,http://domain.com/ring_diamond.jpg,,,,,,,,,,

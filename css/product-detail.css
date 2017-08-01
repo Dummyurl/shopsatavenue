@@ -1,0 +1,169 @@
+.related-item-table {
+	border: 1px solid #ebebeb;
+	overflow: hidden;
+	margin-top:20px;
+	margin-bottom:10px;
+	height:150px !important;
+	text-align: center;
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+	background-color: #ffffff;
+}
+
+.related-item-table ul{
+	margin-bottom: 25px;
+}
+
+.related-item-table ul li{
+	font-size: 14px;
+	color: #656565;
+	font-weight: 500;
+	padding: 10px 0;
+}
+
+.related-item-table .button{
+	background: transparent;
+	padding: 8px 35px;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.related-item-table .button:hover{
+	color: #000;
+	background: #58ace0;
+}
+
+.related-item-table:hover{
+	box-shadow: 1px 1px 10px rgba(0,0,0,.16)
+}
+
+.related-item-table:hover .pricing-head{
+	background: #58ace0;
+	border-color: #58ace0;
+}
+
+.related-item-table:hover .pricing-head span{
+	color: #000;
+}
+/* Other store related items */
+.other-seller-table {
+	border: 1px solid #ebebeb;
+	overflow: hidden;
+	margin-top:20px;
+	margin-bottom:10px;
+	height:150px !important;
+	text-align: center;
+	transition: .3s ease-in-out;
+	-webkit-transition: .3s ease-in-out;
+	background-color: #ffffff;
+}
+
+.other-seller-table ul{
+	margin-bottom: 25px;
+}
+
+.other-seller-table ul li{
+	font-size: 14px;
+	color: #656565;
+	font-weight: 500;
+	padding: 10px 0;
+}
+
+.other-seller-table .button{
+	background: transparent;
+	padding: 8px 35px;
+	font-size: 14px;
+	margin-bottom: 30px;
+}
+
+.other-seller-table .button:hover{
+	color: #000;
+	background: #58ace0;
+}
+
+.other-seller-table:hover{
+	box-shadow: 1px 1px 10px rgba(0,0,0,.16)
+}
+
+.other-seller-table:hover .pricing-head{
+	background: #58ace0;
+	border-color: #58ace0;
+}
+
+.other-seller-table:hover .pricing-head span{
+	color: #000;
+}
+
+.add-cart button { width:97% !important }
+
+/* zoom styles */
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+/**
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.cf {
+    *zoom: 1;
+}
+.info
+{
+	text-indent:1em;
+}
+.box
+{
+	margin-bottom:40px;
+}
+
+
+/*h1 span
+{
+	font-size:15px;
+	font-weight:normal;
+	padding-left:20px;
+}
+h3
+{
+	margin:5px 0;
+	padding:8px 0;
+	border-bottom:1px solid #ddd;
+}
+h3 span
+{
+	color:#F30;
+	font-weight:normal;
+	font-size:14px;
+	padding-left:10px;
+}
+h2
+{
+	border-bottom:1px solid #aaa;
+	padding:10px 0;
+}
+
+#option ul
+{
+	list-style:square;
+	line-height:2em;
+}
+#option b
+{
+	color:#333;
+	padding:0 5px;
+	text-shadow:1px 1px 0 #fff;
+	
+}
+#option i
+{
+	color:#F30;
+	margin-left:5px;
+}*/
+/* zoom styles end */
